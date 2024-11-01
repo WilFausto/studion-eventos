@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;800;900&display=swap" rel="stylesheet">
     <title>StudiOn</title>
 </head>
 
@@ -15,7 +18,7 @@
         </h1>
         <ul>
             <li>
-                <a href="">Empresa</a>
+                <a href="" class="selected">Empresa</a>
             </li>
             <li>
                 <a href="">Eventos</a>
@@ -35,48 +38,61 @@
     <header>
         <h2>.empresa</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, 
-            cupiditate aliquam quae laudantium magnam obcaecati sint voluptatem alias nulla dicta reprehenderit 
-            commodi atque laborum provident dolores ullam, sequi molestiae! Ullam.
+            cupiditate aliquam quae laudantium magnam obcaecati sint voluptatem alias nulla dicta reprehenderit.
         </p>
     </header>
 
     <main>
-        <section>
+        <section class="section1">
             <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
-            <img src="./images/pessoa.png" alt="Homem olhando para frente com celular no ouvido">
+            <p class="paragrafo1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="paragrafo2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate</p>
+            <div>
+            <img src="./images/pessoa.png" alt="Homem olhando para frente com celular no ouvido" class="pessoa">
+            </div>
         </section>
 
-        <section>
+        <section class="section2">
             <h4>Quem confia no nosso trabalho</h4>
             <img src="./images/logos.png" alt="Logos dos parceiros do site">
         </section>
 
-        <section>
+        <section class="section3">
             <img src="./images/video.jpg" alt="Homem na sacada de um predio olhando a vistagi">
         </section>
 
     </main>
 
     <footer>
-        <h2>Imagine<span>On</span> <span>Eventos</span></h2>
+        <div>
+            <h2>
+                Studi<span class="accent">on</span> 
+                <span class="subtitle">Eventos</span>
+            </h2>
         <form action="">
             <label for="">
                 Receba News e Promoções
             </label>
-            <input type="email" placeholder="email">
-            <button type="submit">Enviar</button>
+            <input type="email" placeholder="e-mail">
+            <button type="submit">
+                <img src="./images/icons/send.png" alt="">
+            </button>
         </form>
 
         <ul>
-            <li class="facebook">Facebook</li>
-            <li class="whatsapp">Whatsapp</li>
-            <li class="Instagran">Youtube</li>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/icons/facebook.png" alt="">
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/icons/whatsapp.png" alt="">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+                <img src="./images/icons/youtube.png" alt="">
+            </a>
         </ul>
-
+         </div>
         <hr>
-        <p>Imagine<span>On</span> <span>Eventos</span> - Todos os direitos reservados</p>
+        <p>Studi<span>On</span> - Todos os direitos reservados</p>
     </footer>
 
 </body>
