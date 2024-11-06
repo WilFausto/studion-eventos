@@ -1,20 +1,33 @@
+:root {
+    --color-primary:#EAAB0A;
+    --color-secundary:#FFC501;
+    --text-primary:#FFF;
+    --text-secundary:#000;
+    --bg-footer:#000;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: Montserrat;
 }
 
+html{
+    font-size: 62,5%;
+}
+
 nav {
     width: 90%;
-    margin: 20px auto;
+    margin: 2rem auto;
     display: flex;
     justify-content: space-around;
 }
 
 h1 {
-    color: #ffff;
-    font-size: 40px;
-    height: 50px;
+    color: var(--text-primary);
+    font-size: 4rem;
+    height: 5rem;
     font-weight: 900;
     line-height: normal;
     letter-spacing: -0.08px;
@@ -23,15 +36,15 @@ h1 {
 }
 
 .accent {
-    color: #eaab0a;
+    color: var(--color-primary);
 
 }
 
 .subtitle {
     display: block;
-    margin-top: -5px;
-    color: #ffff;
-    font-size: 15px;
+    margin-top: -0.5px;
+    color: var(--text-primary);
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -42,56 +55,57 @@ h1 {
 ul {
     display: flex;
     list-style: none;
-    height: 50px;
+    height: 5rem;
     align-items: center;
 
 }
 
 a {
     text-decoration: none;
-    color: #ffff;
-    font-size: 15px;
+    color:var(--text-primary);
+    font-size: 1.5rem;
     font-weight: 500;
-    margin-left: 30px;
+    margin-left: 3rem;
     text-transform: uppercase;
+    transition: color 0.8s linear ;
 
 }
 
 a:hover {
-    color:#FFC501;
+    color:var(--color-secundary);
     
 }
 
 .selected {
-    color: #eaab0a;
+    color: var(--color-primary);
 }
 
 header {
     background: url(./images/header.png) lightgray 50% / cover no-repeat;
     width: 100%;
-    height: 600px;
-    margin-top: -90px;
+    height: 60rem;
+    margin-top: -9rem;
     display: flex;
     flex-direction: column;
     align-items: end;
 }
 
 header > h2 {
-    color: #FFC501;
-    font-size: 120px;
+    color: var(--color-primary);
+    font-size: 12rem;
     font-weight: 900;
-    margin-top: 180px;
-    margin-right: 200px;
+    margin-top: 18rem;
+    margin-right: 20rem;
 
 }
 
 header > p {
-    color: #ffff;
-    font-size: 20px;
+    color: var(--text-primary);
+    font-size: 2rem;
     font-weight: 400;
-    width: 645px;
-    height: 67px;
-    margin-right: 150px;
+    width: 64.5rem;
+    height: 6.7rem;
+    margin-right: 15rem;
 }
 
 .section1 {
@@ -103,45 +117,32 @@ header > p {
 
 .section1 > h4 {
     position: absolute;
-    font-size: 25px;
+    font-size: 2.5rem;
     font-weight: 800;
-    width: 430px;
-    top: 150px;
-    left: 350px;
+    width: 43rem;
+    top: 15rem;
+    left: 35rem;
 }
 
-.section1 > p {
-
-    width: 494px;
-    font-size: 25px;
+.section1 > H4 > small {
     font-weight: 400;
-}
-
-.section1 > .paragrafo1 {
-    position: absolute;
-    top: 280px;
-    left: 350px;
-}
-
-.section1 > .paragrafo2 {
-    position: absolute;
-    top: 420px;
-    left: 350px;
+    margin-top: 3rem;
+    display: block;
 }
 
 .section1 > div {
     background: url(./images/linhas.svg) center no-repeat;
     position: absolute;
-    right: 150px;
+    right: 15rem;
 }
 
 .pessoa {
-    margin-left: 180px;
+    margin-left: 18rem;
 }
 
 .section2 {
-    background-color: #FFC501;
-    height: 562px;
+    background-color: var(--color-secundary);
+    height: 56.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -149,22 +150,22 @@ header > p {
 }   
 
 .section2 > h4 {
-    font-size: 25px; 
+    font-size: 2.5rem; 
     font-weight: 800;
 }
 
 .section3 {
-    height: 837px;
+    height: 83.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 footer {
-    background: #000;
+    background: var(--bg-footer);
     width: 100%;
-    height: 300px;
-    color: #fff;
+    height: 30rem;
+    color: var(--text-primary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,9 +174,9 @@ footer {
 }
 
 footer > div > h2 {
-        color: #ffff;
-        font-size: 40px;
-        height: 50px;
+        color: var(--text-primary);
+        font-size: 4rem;
+        height: 5rem;
         font-weight: 900;
         letter-spacing: -0.08px;
         text-align: left;
@@ -196,22 +197,21 @@ footer > div > form {
 
 footer > div > form > label {
     display: block;
-    width: 160px;
-    font-size: 15px;
+    width: 16rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
 footer > div > form > input {
     width: 312px;
     height: 50px;
-    background-color: #eaab0a;
-    border: none;
-    padding: 0 5px;
+    background-color: var(--color-primary);
+    padding: 0 0.5rem;
 }
 
 footer > div > form > input::placeholder {
-    color: #fff;
-    font-size: 15px;
+    color: var(--text-primary);
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: -0.3px;
     text-transform: uppercase;
@@ -231,7 +231,7 @@ footer > hr {
     width: 1149.402px;
     height: 0px;
     stroke-width: 0.5px;
-    stroke: #fff;
+    stroke: var(--text-primary);
 }
 
 footer > p {
@@ -242,5 +242,5 @@ footer > p {
 }
 
 footer > p > span {
-    color: #eaab0a;
+    color:var(--color-primary);
 }
